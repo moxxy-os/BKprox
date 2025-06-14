@@ -105,7 +105,7 @@
     border-radius: 8px;
     flex: 1;
     background: var(--fourth-bg, #F5A9B8);
-    font-size: 1.1rem;
+    font-size: 1.2rem;
     transition: 0.2s ease;
   }
 
@@ -121,7 +121,7 @@
 
   p {
     margin: 0;
-    margin-top: 0.2em;
+    margin-top: 1em;
   }
 
   .nav {
@@ -172,9 +172,9 @@
     color: #000;
     outline: none;
     border: none;
-    border-radius: 8px;
+    border-radius: 10px;
     background: var(--fourth-bg, #F5A9B8);
-    padding: 0.5rem 1rem;
+    padding: 0.2rem 1rem;
     width: 245px;
     min-width: 245px;
     overflow: hidden;
@@ -198,8 +198,8 @@
   }
 
   .tab-favicon {
-    width: 18px;
-    height: 18px;
+    width: 16px;
+    height: 16px;
     flex-shrink: 0;
     border-radius: 4px;
   }
@@ -237,9 +237,9 @@
     color: #000;
     outline: none;
     border: none;
-    border-radius: 8px;
+    border-radius: 10px;
     background: var(--fourth-bg, #F5A9B8);
-    padding: 0.7rem;
+    padding: 0.5rem;
     cursor: pointer;
     width: 40px;
     height: 40px;
@@ -248,7 +248,7 @@
     justify-content: center;
     flex-shrink: 0;
     transition: 0.2s ease;
-    font-size: 1.3rem;
+    font-size: 1.35rem;
   }
 
   .new-tab:hover {
@@ -299,7 +299,7 @@
   .buttons button {
     border: none;
     background: var(--fourth-bg, #F5A9B8);
-    border-radius: 8px;
+    border-radius: 10px;
     color: #000;
     padding: 0.7rem 1.2rem;
     max-width: 40px;
@@ -316,7 +316,7 @@
   .input_row input {
     background: var(--fourth-bg, #F5A9B8);
     border: none;
-    border-radius: 8px;
+    border-radius: 10px;
     color: #000;
     outline: none;
     padding: 0.7rem 1rem;
@@ -432,7 +432,7 @@
       const tab = {
         id: nextTabId++,
         title: "New Tab",
-        url: "https://start.duckduckgo.com/",
+        url: "",
         frame: frame,
         favicon: getFaviconUrl("https://start.duckduckgo.com"),
       };
@@ -663,9 +663,8 @@ frame.frame.src = "/page/newtab.html";
 
             <div class="flex nav">
              
-              <input class="bar" id="address-bar" autocomplete="off" autocapitalize="off" autocorrect="off" 
-                onkeyup="event.keyCode === 13 && handleSubmit()">
-
+             <input class="bar" id="address-bar" placeholder="Search" autocomplete="off" autocapitalize="off" autocorrect="off" 
+  onkeyup="event.keyCode === 13 && handleSubmit()">
              
 
               <p class="version">
