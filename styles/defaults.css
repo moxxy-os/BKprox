@@ -8,15 +8,15 @@
 @import url("global.css");
 
 :root {
-  --bg: #0a111d;
-  --secondary-bg: #2b384d;
-  --third-bg: #444f60;
-  --fourth-bg: #212630;
-  --primary: #a4b8db;
-  --secondary: #7d93ba;
-  --text-color: #d5dce8;
-  --button-bg: #2b384d;
-  --button-hover: #3c4a5d;
+  --bg: #5BCEFA;
+  --secondary-bg: #F5A9B8;
+  --third-bg: #FFFFFF;
+  --fourth-bg: #F5A9B8;
+  --primary: #5BCEFA;
+  --secondary: #F5A9B8;
+  --text-color: #000000;
+  --button-bg: #FFFFFF;
+  --button-hover: #DCDCDC;
 }
 
 * {
